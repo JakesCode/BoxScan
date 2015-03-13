@@ -1,0 +1,259 @@
+<html>
+
+<style type="text/css">
+	h1.title
+	{
+		font-size: 110px;
+		font-family: "Verdana";
+		font-weight: bolder;
+		text-align: center;
+		color: #2C6DAF;
+	}
+	h1.subText
+	{
+		font-size: 40px;
+		font-family: "Verdana";
+		text-align: center;
+		color: #D80F51;
+	}
+	h2
+	{
+		font-size: 51px;
+		font-family: "Verdana";
+		text-align: center;
+		background-color: #255757;
+		position: relative;
+		color: #2C2C2C;
+		-webkit-transition: background-color 1s;
+	}
+	h3
+	{
+		font-size: 40px;
+		font-family: "Verdana";
+		text-align: center;
+		color: #A05D54;
+		background-color: #653757;
+		position: relative;
+	}
+	h3.small
+	{
+		font-size: 26px;
+		font-family: "Verdana";
+		text-align: center;
+		color: #EED960;
+		background-color: #6C3A57;
+		position: relative;
+	}
+	h3.version
+	{
+		font-size: 31px;
+		font-family: "Verdana";
+		text-align: center;
+		color: #A05D54;
+		background-color: #153757;
+		position: relative;
+	}
+	h2:hover
+	{
+		color: #2C2C2C;
+		background-color: #425757;
+		-webkit-transition: background-color 1s;
+	}
+	body
+	{
+		background-image: url("bg.png");
+	}
+	p.header
+	{
+		font-family: "Verdana";
+		font-size: 40px;
+		font-weight: bold;
+		text-decoration: underline;
+		display: inline;
+	}
+	p.body
+	{
+		font-family: "Verdana";
+		font-size: 26px;
+	}
+	html
+	{
+		cursor: default;
+		color: #FFFFFF;
+	}
+	li
+	{
+		font-family: "Verdana";
+		font-size: 20px;
+	}
+	button
+	{
+		width: 200px;
+		font-size: 40px;
+		font-weight: bolder;
+		border-radius: 20px;
+		-webkit-transition: width 1s;
+	}
+	button:hover
+	{
+		font-weight: bold;
+		color: #333333;
+		background-color: #E6E6E6;
+		cursor: pointer;
+		width: 240px;
+		-webkit-transition: width 1s;
+	}
+	p.code
+	{
+		font-family: "Courier New";
+		font-size: 31px;
+		background-color: #CCCCCC;
+		display: inline;
+		border-style: outset;
+		color: #010101;
+	}
+	a
+	{
+		color: #45ABA6;
+		font-size: 31px;
+	}
+	a.contents
+	{
+		font-size: 31px;
+		text-transform: uppercase;
+		text-decoration: underline;
+		font-weight: bold;
+		font-family: "Verdana";
+	}
+	a.button
+	{
+		width: 200px;
+		font-size: 40px;
+		font-weight: bolder;
+		border-radius: 20px;
+	}
+	a.button:hover
+	{
+		font-weight: bold;
+		cursor: pointer;
+	}
+	a.link
+	{
+		font-size: 26px;
+		font-weight: bolder;
+		color: #CDCFF0;
+		-webkit-transition: font-size 0.25s ease-out;
+	}
+	a.link:hover
+	{
+		font-size: 30px;
+		color: #ADFFF0;
+		-webkit-transition: font-size 0.25s ease-out;
+	}
+	textarea
+	{
+		width: 400px;
+		height: 80px;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 10px;
+		border-color: #000000;
+		background-color : #000000;
+		color: #FFFFFF;
+		opacity: 0.7;
+		font-family: "Times New Roman";
+		vertical-align: middle;
+		-webkit-transition: height 1s;
+	}
+	textarea:hover
+	{
+		font-weight: bold;
+		border-radius: 10px;
+		opacity: 1;
+		width: 400px;
+		height: 100px;
+		-webkit-transition: height 1s;
+	}
+	textarea:focus
+	{
+		width: 400px;
+		height: 100px;
+	}
+	p.small
+	{
+		font-family: "Verdana";
+		font-size: 20px;
+	}
+</style>
+
+<script type="text/javascript">
+
+function back()
+{
+	location.replace("main.html");
+}
+</script>
+
+<head>
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	<title>BoxScan</title>
+</head>
+
+<body>
+<h1 class="title" id="top">BoxScan</h1>
+<h1 class="subText">Getting the most out of BoxScan!</h1>
+<br>
+<h2 id="longWords">Usage - how can it be <i>faster</i>?</h2>
+
+<p class="header" id="howDoIUseIt">Keyboard Shortcuts</p>
+<p class="body">Your best friend! <br>Here are the ones you'll most likely use:</p><br>
+
+<p class="code">CTRL + A</p>
+<p class="body">Highlight all text in a <b>focused</b> area, for example when <b>clicking inside the text boxes in <i>BoxScan</i></b>.</p>
+<p class="body">Try it!</p>
+<textarea>Press CTRL+A in here to highlight me!</textarea>
+
+<br>
+<br>
+<p class="code">CTRL + X</p>
+<p class="body">Used in <b>conjunction</b> with <b>CTRL+A</b>. <b><i>Removes the text currently highlighted, which you can paste anywhere else.</i></b></p>
+<p class="body">Try it!</p>
+<textarea placeholder="Poof! Gone! Easy, isn't it?">Press CTRL+A, then CTRL+X!</textarea>
+<p class="small">(Take these words on an adventure to the next box!)</p>
+
+<br>
+<br>
+<p class="code">CTRL + V</p>
+<p class="body">Paste! Used in <b>conjunction</b> with <b>CTRL+C</b>, which <b>copies</b> a piece of highlighted text. Unlike <b>CTRL+X</b>, it <b>doesn't remove it</b>.</p>
+<p class="body">Try it!</p>
+<textarea placeholder="Press CTRL+V in here after you've done CTRL+C or CTRL+X!"></textarea>
+<br>
+<br>
+
+<p class="header" id="howDoIUseIt">Methods</p>
+
+<br>
+<br>
+<p class="code">Dragging Highlighted Text</p>
+<p class="body">After using <b>CTRL+A</b>, <i>drag</i> the highlighted text to <b>another text box</b><i> (even on another page if you want to)</i> to <b>copy it over</b>.</p>
+<textarea placeholder="Easy, isn't it?">Press CTRL+A, then drag to the other text box!</textarea>
+<textarea placeholder="Drag the highlighted words to me!"></textarea>
+
+<br>
+<br>
+<p class="header">And we're done!</h1>
+<p class="body">Wasn't so hard, was it?<br> Now you're an <i>expert</i>, press the <b>Back</b> button to return to <b><i>BoxScan</i></b>.</p>
+
+
+<br>
+<br>
+<div align="middle">
+<button onclick="back()" class="button">Back</button>
+<a class="button" href="#top">To The Top</a>
+</div>
+</body>
+
+
+
+</html>

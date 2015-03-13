@@ -1,0 +1,249 @@
+<!--
+
+BoxScan by Jake Stringer, 2015
+
+Scans a textbox for user-defined "codewords" and replaces them with user-defined "defenitions"
+
+-->
+
+<html>
+
+<style type="text/css">
+	html
+	{
+		cursor: default;
+	}
+	h1.title
+	{
+		font-size: 80px;
+		font-family: "Verdana";
+		font-weight: bolder;
+		color: #E6E6E6;
+		text-shadow: 15px 15px 15px #3D5086;
+		-webkit-transition: text-shadow 1s;
+	}
+	h1.title:hover
+	{
+		font-size: 80px;
+		font-family: "Verdana";
+		color: #EBEBEB;
+		cursor: pointer;
+		text-shadow: 0px 0px 90px #1947D1;
+		-webkit-transition: text-shadow 1s;
+	}
+	body
+	{
+		background-image: url("bg.png");
+		color: #E6E6E6;
+	}
+	.main
+	{
+		font-size: 31px;
+		font-family: "Verdana";
+		font-weight: bold;
+		text-align: left;
+	}
+	textarea
+	{
+		width: 1100px;
+		height: 50px;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 10px;
+		background-color : #FFF1FC;
+		opacity: 0.4;
+		resize: none;
+		-webkit-transition: height 1s;
+
+	}
+	textarea:hover
+	{
+		height: 310px;
+		-webkit-transition: height 1s;
+	}
+	textarea:focus
+	{
+		width: 1100px;
+		height: 310px;
+		border-radius: 10px;
+		background-color : #FFFFFF;
+		opacity: 0.8;
+		-webkit-transition: height 1s;
+	}
+	h1
+	{
+		font-family: "Verdana";
+		font-size: 33px;
+	}
+
+	::-webkit-input-placeholder
+	{
+		color: #1FDCF2;
+		text-align: justify;
+		font-size: 31px;
+		opacity: 0.7;
+		letter-spacing: 6px;
+	}
+	h2
+	{
+		font-family: "Verdana";
+		font-size: 31px;
+		opacity: 0.9;
+	}
+	a.submitButton
+	{
+		font-size: 200%;
+		font-weight: bold;
+		font-family: "Verdana";
+		border-radius: 5px;
+		border-width: 5px;
+		cursor: pointer;
+		background-color: #6B6B6B;
+		-webkit-transition: background-color 1s;
+		color: lightgray;
+	}
+	a.submitButton:hover
+	{
+		font-weight: bolder;
+		font-family: "Verdana";
+		background-color: #065CAD;
+		-webkit-transition: background-color 1s;
+	}
+	.img
+	{
+		float: right;
+		width: 400px;
+		height: 340px;
+		-webkit-transition: width 1s;
+	}
+	.img:hover
+	{
+		width: 450px;
+		-webkit-transition: width 1s;
+	}
+	a.tips
+	{
+		color: #FFFFFF;
+		font-size: 30px;
+		-webkit-transition: font-size 0.25s ease-out;
+		font-family: "Verdana";
+	}
+	a.tips:hover
+	{
+		text-decoration: underline;
+		color: #ACFFFF;
+		font-size: 33px;
+		-webkit-transition: font-size 0.25s ease-out;
+	}
+	ul.main
+	{
+		font-size: 20px;
+		color: #F080C0;
+		list-style: square inside url("bg2.png");
+	}
+	ul.side
+	{
+		font-size: 20px;
+		color: #F080C0;
+		list-style: square inside url("bg2.png");
+		text-indent: 40px;
+	}
+	a:visited
+	{
+		color: #FFFFFF;
+		font-size: 20px;
+		font-family: "Verdana";
+	}
+</style>
+
+<script type="text/javascript">
+
+function getBoxText()
+{
+	var boxText = document.getElementById("textBox").value // Get what's in the TextBox.
+	console.log(boxText);
+
+	var mapping = {};
+	///////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////
+	// Add new keywords with the following syntax: mapping["keyword"] = "definition"; (Make sure there is a ";" at the end!)
+	mapping["gdc"] = "good domestic, clean";
+	mapping["cwi"] = "consistent with inventory";
+	mapping["pc"] = "poorly cleaned";
+	mapping["adc"] = "average domestic, clean";
+	mapping["nc"] = "not cleaned";
+	mapping["inv"] = "inventory";
+	mapping["lorem"] = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.";
+	mapping["ap"] = "apartment";
+	mapping["entrythru"] = "entry through a plain, light wooden door; silver key lock mechanism.";
+	// End of edit section
+	///////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////
+
+	var newString = (function(map, oldString) {
+		Object.keys(mapping).forEach(function(key) {
+			oldString = oldString.replace(new RegExp('\\b' + key + '\\b', 'g'), map[key]);
+		});
+		return oldString;
+	}(mapping, document.getElementById('textBox').value));
+	output.innerHTML = newString;
+	console.log(newString)
+}
+
+function main()
+{
+	getBoxText();
+	document.getElementById("output").select();
+}
+
+function info()
+{
+	location.replace("info.html");
+}
+
+function jake()
+{
+	location.reload()
+}
+</script>
+
+<head>
+	<img src="icon.png" class="img" alt="BoxScan">
+	<h1 align="middle" class="title" onclick="info()" id="top">Welcome to BoxScan <u>2.0</u></h1>
+	<h2 align="middle">A lightweight app by Jake Stringer 2015</h2>
+</head>
+
+<body>
+<div align="middle">
+	<a onclick="main()" class="submitButton">Submit</a>
+	<a onclick="jake()" class="submitButton">Clear</a>
+	<br>
+	<br>
+	<textarea placeholder="Begin writing here..." id="textBox" onkeydown="getBoxText()"></textarea>
+	<br>
+	<br>
+
+	<!-- <button onclick="getBoxText()">Submit</button> -->
+
+	<br>
+	<h1>Text will automatically be changed in the box below.</h1>
+	<a class="tips" href="tips.html">How to get the most out of BoxScan</a>
+	<br>
+	<br>
+	<textarea id="output" placeholder="....and completed text will appear here."></textarea>
+	<br>
+	<h1>Easier!</h1>
+	<ul class="main">
+		<li>With user-defined presets, every experience with <b>BoxScan</b> is your own.</li>
+		<li>Easy to edit <i>Javascript Syntax</i> inside.</li>
+	</ul>
+	<ul class="side">
+		<li>Click <a href="info.html#codewords">"Welcome to BoxScan"</a> (at the top of the page) to be told more about the <b>syntax</b>.</li>
+	</ul>
+	<ul class="main">
+		<li>Simple to use - <i>type</i>, <i>click submit</i>, then <i>CTRL+X</i>.</li>
+	</ul>
+</div>
+</body>
+
+</html>

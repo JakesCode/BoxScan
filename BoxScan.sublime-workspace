@@ -1,0 +1,314 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"out",
+				"outline-width"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"be",
+				"border-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"new",
+				"newString"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"p",
+				"population"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Jake (King of Cool)/Desktop/QuickThinker/corePy.py",
+			"settings":
+			{
+				"buffer_size": 1364,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main.html",
+			"settings":
+			{
+				"buffer_size": 1756,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 357.0,
+		"selected_items":
+		[
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colo",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"insall",
+				"Colorsublime: Install Theme"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Jake (King of Cool)/Desktop/BoxScan"
+	],
+	"file_history":
+	[
+		"/C/Users/Jake (King of Cool)/Desktop/[Python] Hello, World/pygame.py",
+		"/C/Users/Jake (King of Cool)/Desktop/QuickThinker/corePy.py"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\">\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\Jake (King of Cool)\\Desktop\\BoxScan"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Jake (King of Cool)/Desktop/QuickThinker/corePy.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1337,
+								1337
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Python 3/Python3.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 759.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1756,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								640,
+								640
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1012.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 154.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 117.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
